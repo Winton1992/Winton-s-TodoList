@@ -12,9 +12,17 @@ class TodoListViewController: UITableViewController {
 
     var itemArray = ["Fine me", "Buy eggs", "Buy milk"]
     
+    let defaults = UserDefaults.standard
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        // retrive
+        if let items = defaults.array(forKey: "TodoListArray") as? [String]{
+            itemArray = items
+        }
+        
     }
     
     // TableView DataSource Methods
@@ -31,6 +39,7 @@ class TodoListViewController: UITableViewController {
         
     }
     
+    // Add checkmark for the selected item.
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //print(itemArray[indexPath.row])
        
@@ -46,13 +55,16 @@ class TodoListViewController: UITableViewController {
     // Add New Item
     @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
         
-        var textField = UITextField()
+        var textField = UITextField() //store the user's input
         
         let alert = UIAlertController(title: "Add NEW TodoList Item", message: "", preferredStyle: .alert)
         
         let action = UIAlertAction(title: "Add Item", style: .default) { (action) in
             // what will happen once the user clicks the Add Item button on our UIAlert
             self.itemArray.append(textField.text!)
+            
+            self.defaults.set(self.itemArray, forKey: "TodoListArray")
+            
             self.tableView.reloadData()
         }
         
