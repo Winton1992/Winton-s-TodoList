@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		BD9749C20350F1F37098974A /* Pods_TodoList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841AE86F137ABAF62C931B7A /* Pods_TodoList.framework */; };
+		E010BC4E20949F28003D2B89 /* 01.png in Resources */ = {isa = PBXBuildFile; fileRef = E010BC4820949F27003D2B89 /* 01.png */; };
+		E010BC4F20949F28003D2B89 /* 04.png in Resources */ = {isa = PBXBuildFile; fileRef = E010BC4920949F27003D2B89 /* 04.png */; };
+		E010BC5020949F28003D2B89 /* 05.png in Resources */ = {isa = PBXBuildFile; fileRef = E010BC4A20949F27003D2B89 /* 05.png */; };
+		E010BC5120949F28003D2B89 /* 02.png in Resources */ = {isa = PBXBuildFile; fileRef = E010BC4B20949F28003D2B89 /* 02.png */; };
+		E010BC5220949F28003D2B89 /* 06.png in Resources */ = {isa = PBXBuildFile; fileRef = E010BC4C20949F28003D2B89 /* 06.png */; };
+		E010BC5320949F28003D2B89 /* 03.png in Resources */ = {isa = PBXBuildFile; fileRef = E010BC4D20949F28003D2B89 /* 03.png */; };
 		E03AC5AF208EBDC5003EC555 /* SwipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03AC5AE208EBDC5003EC555 /* SwipeTableViewController.swift */; };
 		E053ADF720735580002CECB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E053ADF620735580002CECB9 /* AppDelegate.swift */; };
 		E053ADF920735580002CECB9 /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E053ADF820735580002CECB9 /* TodoListViewController.swift */; };
@@ -23,6 +29,12 @@
 		841AE86F137ABAF62C931B7A /* Pods_TodoList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TodoList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3031409117027632518A102 /* Pods-TodoList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodoList.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TodoList/Pods-TodoList.debug.xcconfig"; sourceTree = "<group>"; };
 		DE48ADCDE03DB36DE5E47E29 /* Pods-TodoList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodoList.release.xcconfig"; path = "Pods/Target Support Files/Pods-TodoList/Pods-TodoList.release.xcconfig"; sourceTree = "<group>"; };
+		E010BC4820949F27003D2B89 /* 01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 01.png; sourceTree = "<group>"; };
+		E010BC4920949F27003D2B89 /* 04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 04.png; sourceTree = "<group>"; };
+		E010BC4A20949F27003D2B89 /* 05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 05.png; sourceTree = "<group>"; };
+		E010BC4B20949F28003D2B89 /* 02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 02.png; sourceTree = "<group>"; };
+		E010BC4C20949F28003D2B89 /* 06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 06.png; sourceTree = "<group>"; };
+		E010BC4D20949F28003D2B89 /* 03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 03.png; sourceTree = "<group>"; };
 		E03AC5AE208EBDC5003EC555 /* SwipeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTableViewController.swift; sourceTree = "<group>"; };
 		E053ADF320735580002CECB9 /* TodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E053ADF620735580002CECB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -65,9 +77,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E01A749D20949EF400875A76 /* Pic */ = {
+			isa = PBXGroup;
+			children = (
+				E010BC4820949F27003D2B89 /* 01.png */,
+				E010BC4B20949F28003D2B89 /* 02.png */,
+				E010BC4D20949F28003D2B89 /* 03.png */,
+				E010BC4920949F27003D2B89 /* 04.png */,
+				E010BC4A20949F27003D2B89 /* 05.png */,
+				E010BC4C20949F28003D2B89 /* 06.png */,
+			);
+			path = Pic;
+			sourceTree = "<group>";
+		};
 		E053ADEA2073557F002CECB9 = {
 			isa = PBXGroup;
 			children = (
+				E01A749D20949EF400875A76 /* Pic */,
 				E053ADF520735580002CECB9 /* TodoList */,
 				E053ADF420735580002CECB9 /* Products */,
 				1D88632CFF2BBB2B92B1696C /* Pods */,
@@ -194,9 +220,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E010BC4F20949F28003D2B89 /* 04.png in Resources */,
 				E053AE0120735580002CECB9 /* LaunchScreen.storyboard in Resources */,
+				E010BC5020949F28003D2B89 /* 05.png in Resources */,
+				E010BC5120949F28003D2B89 /* 02.png in Resources */,
 				E053ADFE20735580002CECB9 /* Assets.xcassets in Resources */,
+				E010BC4E20949F28003D2B89 /* 01.png in Resources */,
 				E053ADFC20735580002CECB9 /* Main.storyboard in Resources */,
+				E010BC5320949F28003D2B89 /* 03.png in Resources */,
+				E010BC5220949F28003D2B89 /* 06.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
